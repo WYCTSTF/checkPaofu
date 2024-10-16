@@ -10,7 +10,7 @@ def send_mail(subject, body):
     """
     使用 mail 命令发送邮件通知
     """
-    process = subprocess.Popen(['mail', '-s', subject, 'syh@localhost'], stdin=subprocess.PIPE)
+    process = subprocess.Popen(['mail', '-s', subject, 'role@your_email'], stdin=subprocess.PIPE)
     process.communicate(input=body.encode())
 
 # 配置 Firefox 无头模式
